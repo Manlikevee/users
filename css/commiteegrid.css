@@ -1,0 +1,117 @@
+* {
+    text-decoration: none;
+    transition: all .2s linear;
+  }
+  
+  html {
+      font-size: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      scroll-padding-top: 9rem;
+    }
+
+
+.destination .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(3fr, minmax(15rem, 1fr));
+    gap: 1.2rem;
+  }
+  
+  .destination .box-container .box {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: #fff;
+    border: 0.5px solid rgb(121, 121, 121);
+  }
+  
+  .destination .box-container .box:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .destination .box-container .box .image {
+    height: 6rem;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .destination .box-container .box .bottom {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .destination .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .destination .box-container .box .content {
+    padding: 0.6rem;
+  }
+  
+  .destination .box-container .box .content h3 {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .destination .box-container .box .content p {
+    padding: 0.5rem 0;
+    font-size: 13px;
+    color: #000000;
+    line-height: 1.45;
+  }
+
+  .box_content{
+      height: 18vh;
+      overflow-y: scroll;   
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  
+  .destination .box-container .box .content a {
+    font-size: 1.1rem;
+    color: #29d9d5;
+  }
+  
+  .destination .box-container .box .content a:hover i {
+    padding-left: 1rem;
+  }
+  
+  .destination .box-container .box .content a i {
+    padding-right: .5rem;
+  }
+  
+  .box_head{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .box_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_bottom span{
+    display: flex;
+}
+.box_bottom span li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 990px) {
+    .box_content{
+        height: 15vh;
+        overflow-y: scroll;   
+    }
+    }
+
+    .box_head h2{
+        font-size: 15px;
+    }

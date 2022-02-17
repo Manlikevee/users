@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.contain {
+    max-width: 968px;
+    margin: auto;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .main {
+    overflow: hidden;
+  }
+  
+  .section {
+    padding: 1.5rem 0 1rem;
+  }
+  
+  .section__title {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+
+
+.file__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .file__card {
+    display: grid;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+    padding: 1.5rem 1rem 1rem;
+    border-radius: .75rem;
+  }
+  
+  .file__img {
+    width: 100px;
+    justify-self: center;
+    transition: .3s;
+  }
+  
+  .file__icon {
+    font-size: 1.25rem;
+    color:  hsl(355, 70%, 54%);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  .file__price {
+    font-size: 1rem;
+  }
+  
+  .file__title {
+    font-size: .813rem;
+    font-weight: 500;
+  }
+  
+  .file__card:hover .file__img {
+    transform: translateY(-.25rem);
+  }
+  
+  @media screen and (max-width: 320px) {
+    .container {
+      margin-left: var(--mb-1);
+      margin-right: var(--mb-1);
+    }
+    .file__container {
+        grid-template-columns: 150px;
+        justify-content: center;
+      }
+    }
+  
+
+  @media screen and (min-width: 576px) {
+    .file__container {
+      grid-template-columns: repeat(2, 180px);
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+  .file__container {
+    grid-template-columns: repeat(4, 210px);
+    gap: 1.5rem;
+  }
+}
+
+  /* For large devices */
+@media screen and (min-width: 992px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .file__container {
+      padding-top: 0.1rem;
+    }
+    .file__card {
+      padding: 2rem 1.5rem 1.5rem;
+    }
+    .file__img {
+      width: 90px;
+    }
+    .file__title {
+      font-size: var(--small-font-size);
+    }
+
+  }
+  

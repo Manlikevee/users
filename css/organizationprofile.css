@@ -1,0 +1,112 @@
+.organizationprofile{
+    width: 85%;
+    padding: 40px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+    .contain{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .organizationprofile{
+        width: 100%;
+        padding: 30px;
+        margin: auto;
+    }
+  }
+
+.col{ 
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px ;
+
+  }
+
+  .col label{
+    margin-top: 10px;
+      padding-bottom: 5px;
+  }
+
+
+
+  
+  input[type=text],[type=number] {
+    border: none;
+    outline: none;
+    padding: 6px 6px 9px 1px;
+    width: 100%;
+    font-size: 16px;
+    border:  1px solid #949494;
+    margin-bottom: 10px;
+  }
+
+  input:focus {
+    outline: none !important;
+    border: solid 1px #a92f41;
+  }
+
+ .col select{
+    border: none;
+    outline: none;
+    padding: 6px 6px 9px 1px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: solid 1px #949494;
+  }
+
+ .col select:focus {
+    outline: none !important;
+    border: solid 1px #a92f41;
+  }
+
+  .button {
+    border: none;
+    color: #a92f41;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  .button:hover{
+      transition: 0.9s;
+      background-color: #a92f41;
+      color:#fff;
+  }
+
+  .headertitletext{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    
+  }
+
+  .smallertext{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
+    
+  }
