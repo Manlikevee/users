@@ -290,6 +290,10 @@ color: #424243;
     .notification_input{
         width: 100%;
     }
+
+    .participants{
+        margin-top: 50px;
+    }
   }
  
  
